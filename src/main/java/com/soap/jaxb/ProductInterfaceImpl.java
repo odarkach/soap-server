@@ -2,7 +2,11 @@ package com.soap.jaxb;
 
 import javax.jws.WebService;
 
-@WebService(name = "Product", portName = "ProductPort", serviceName = "ProductService", endpointInterface = "com.soap.jaxb.ProductInterface")
+@WebService(name = "Product",
+            portName = "ProductPort",
+            serviceName = "ProductService",
+            endpointInterface = "com.soap.jaxb.ProductInterface")
+
 public class ProductInterfaceImpl implements ProductInterface {
     @Override
     public Product getProduct() {
